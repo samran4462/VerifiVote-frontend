@@ -58,7 +58,7 @@ export default function ResultsDashboard() {
     if (!publicClient || !selectedElection?.contractAddress) return;
     try {
       const currentBlock = await publicClient.getBlockNumber();
-      const fromBlock = currentBlock > 999n ? currentBlock - 999n : 0n;
+      const fromBlock = currentBlock > BigInt(999) ? currentBlock - BigInt(999) : BigInt(0);
       
       const logs = await publicClient.getLogs({
         address: selectedElection.contractAddress as `0x${string}`,

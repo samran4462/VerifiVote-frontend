@@ -187,7 +187,7 @@ export default function KycPage() {
     value: string | null;
     inputRef: React.RefObject<HTMLInputElement | null>;
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-    capture?: string;
+    capture?: any;
     onClickOverride?: () => void;
   }
   const UploadBox = ({ label, value, inputRef, onChange, capture, onClickOverride }: UploadBoxProps) => (
