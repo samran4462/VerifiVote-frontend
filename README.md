@@ -1,0 +1,2 @@
+# VerifiVote-frontend
+Voting system
